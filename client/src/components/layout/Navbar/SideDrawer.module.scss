@@ -1,0 +1,42 @@
+@import '../../../variables.scss';
+
+.backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+
+  &.open {
+    display: block;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: $text-color;
+  font-size: 0;
+  z-index: 1;
+
+  svg {
+    font-size: 2rem;
+  }
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 70vw;
+  background-color: $bg-color;
+}

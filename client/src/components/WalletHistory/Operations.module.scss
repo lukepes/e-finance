@@ -1,0 +1,38 @@
+@import '../../variables.scss';
+
+.container {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: $secondary-color;
+}
+
+.wallet-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message {
+  margin: 40px;
+  text-align: center;
+}
+
+.link {
+  display: block;
+  width: 100%;
+  margin: 40px 0 10px;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-image: $base-color-gradient;
+  color: $text-color;
+  box-shadow: $box-shadow;
+  cursor: pointer;
+
+  transition: $hover-effect-transform-transition;
+
+  &:hover {
+    transform: $hover-effect-transform-wide;
+  }
+}

@@ -1,0 +1,18 @@
+$base-color: rgb(225, 78, 202);
+$base-color-gradient: linear-gradient(
+  45deg,
+  rgba(225, 78, 202, 1) 0%,
+  rgba(190, 83, 241, 1) 100%
+);
+$secondary-color: #212442;
+$bg-color: #131225;
+$text-color: #fff;
+$border-color: #797fba;
+$danger-color: red;
+
+$box-shadow: -1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+$hover-effect-transform: scale(1.2);
+$hover-effect-transform-small: scale(1.4);
+$hover-effect-transform-wide: scale(1.02);
+$hover-effect-transform-transition: transform 0.3s ease-in-out;

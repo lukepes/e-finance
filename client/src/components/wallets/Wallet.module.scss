@@ -1,0 +1,61 @@
+@import '../../variables';
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: $secondary-color;
+  color: $text-color;
+  cursor: pointer;
+
+  transition: border-color 0.3s ease-in-out;
+
+  &.active {
+    border: 2px solid $base-color;
+  }
+}
+
+.info {
+  .name {
+    margin-bottom: 10px;
+  }
+
+  .balance {
+    font-size: 0.8rem;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+
+  .btn {
+    outline: none;
+    background-color: transparent;
+    font-size: 0;
+    cursor: pointer;
+    transition: $hover-effect-transform-transition;
+
+    &:hover {
+      transform: $hover-effect-transform-small;
+    }
+  }
+
+  .icon {
+    font-size: 1.6rem;
+    color: $text-color;
+
+    &--edit {
+      font-size: 1.4rem;
+    }
+
+    &--danger {
+      font-size: 2rem;
+      color: $danger-color;
+    }
+  }
+}

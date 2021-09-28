@@ -1,0 +1,23 @@
+@import '../../variables.scss';
+
+.link {
+  display: block;
+  width: 100%;
+  height: 42px;
+  margin: 20px 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  line-height: 42px;
+  text-align: center;
+  background-color: $bg-color;
+  border: 1px solid $border-color;
+  color: $text-color;
+  box-shadow: $box-shadow;
+  cursor: pointer;
+
+  transition: $hover-effect-transform-transition;
+
+  &:hover {
+    transform: $hover-effect-transform-wide;
+  }
+}

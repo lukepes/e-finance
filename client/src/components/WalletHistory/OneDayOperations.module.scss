@@ -1,0 +1,57 @@
+@import '../../variables.scss';
+
+.date {
+  padding: 25px 0 5px;
+  font-weight: normal;
+  border-bottom: 2px solid $border-color;
+}
+
+.operation-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  border-bottom: 2px solid $border-color;
+
+  span {
+    width: 33%;
+
+    &:nth-of-type(2) {
+      text-align: center;
+    }
+
+    &:last-of-type {
+      text-align: right;
+    }
+  }
+}
+
+.actions a,
+.actions .action-button {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 0;
+  background-color: transparent;
+  color: $text-color;
+  cursor: pointer;
+
+  transition: $hover-effect-transform-transition;
+}
+
+.actions .action-button {
+  color: $danger-color;
+  margin-right: 0;
+}
+
+.actions svg {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .actions a,
+  .actions .action-button {
+    &:hover {
+      transform: $hover-effect-transform-small;
+    }
+  }
+}

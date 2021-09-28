@@ -1,0 +1,42 @@
+@import '../../../variables.scss';
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-item a,
+.navigation-item button {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 10vh;
+  font-size: 1rem;
+  text-align: center;
+  background-color: transparent;
+  border-top: 2px solid $border-color;
+  color: $text-color;
+  cursor: pointer;
+
+  transition: $hover-effect-transform-transition;
+}
+
+.navigation-item button {
+  border-bottom: 2px solid $border-color;
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    flex-direction: row;
+  }
+
+  .navigation-item a,
+  .navigation-item button {
+    padding: 0 20px;
+    border: none;
+
+    &:hover {
+      transform: $hover-effect-transform;
+    }
+  }
+}

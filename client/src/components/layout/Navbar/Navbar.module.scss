@@ -1,0 +1,55 @@
+@import '../../../variables.scss';
+
+.navbar {
+  height: 10vh;
+  box-shadow: $box-shadow;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0 20px;
+  max-width: 1000px;
+}
+
+.logo {
+  width: fit-content;
+  font-size: 1.8rem;
+  line-height: 10vh;
+  color: $text-color;
+
+  transition: $hover-effect-transform-transition;
+}
+
+.navigation-desktop {
+  display: none;
+}
+
+.mobile-nav-button {
+  display: block;
+  height: 10vh;
+  padding: 0 20px;
+  font-size: 0;
+  background-color: transparent;
+  color: $text-color;
+  cursor: pointer;
+
+  svg {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  logo:hover {
+    transform: $hover-effect-transform;
+  }
+
+  .navigation-desktop {
+    display: block;
+  }
+
+  .mobile-nav-button {
+    display: none;
+  }
+}
